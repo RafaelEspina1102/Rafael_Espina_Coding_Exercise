@@ -57,8 +57,21 @@ Press Ctrl+C to stop it.
 
 ## Testing with Postman
 
-Start the API, then open Postman and create an HTTP request.
-Choose the method, enter the URL, and click **Send**.
+Start the API, then import the saved requests:
+
+1. Open Postman and click **Import**.
+2. Select [PizzaStoreAPI.postman_collection.json](Postman/PizzaStoreAPI.postman_collection.json)
+   from the `Postman` folder.
+3. Open the imported **Pizza Store API** collection and select **Variables**.
+4. Set `baseUrl` to `http://localhost:5000` without a trailing slash.
+   Use the exact name `baseUrl`, since the requests use `{{baseUrl}}`.
+5. Save the value if prompted, then open a request in the collection and click **Send**.
+
+Create toppings first, then use their IDs when creating pizzas. The saved requests
+use example IDs, so update the IDs in the URLs and request bodies as needed.
+If you run the API on another port, change `baseUrl` to match it.
+
+You can also create requests manually using the examples below.
 For POST and PUT, select **Body → raw → JSON**. Use the bodies below.
 GET and DELETE do not need a body.
 
