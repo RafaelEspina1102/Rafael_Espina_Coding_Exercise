@@ -1,7 +1,16 @@
-# Pizza Store API
+## Contents
 
-A backend coding exercise using ASP.NET Core 8 and Entity Framework Core.
-The API lets you add, list, update, and delete pizzas and toppings.
+- [Requirements](#requirements)
+- [Build and run](#build-and-run)
+- [Endpoints](#endpoints)
+- [Testing with Postman](#testing-with-postman)
+- [1. Add a topping](#1-add-a-topping)
+- [2. Update a topping](#2-update-a-topping)
+- [3. Add a pizza](#3-add-a-pizza)
+- [4. Update a pizza](#4-update-a-pizza)
+- [5. Delete records](#5-delete-records)
+- [Automated tests](#automated-tests)
+- [Notes](#notes)
 
 ## Requirements
 
@@ -27,6 +36,7 @@ Press Ctrl+C to stop it.
 
 ## Endpoints
 
+**Toppings Endpoint**
 | Method | URL | What it does |
 | --- | --- | --- |
 | GET | `/api/toppings` | List toppings |
@@ -34,6 +44,10 @@ Press Ctrl+C to stop it.
 | POST | `/api/toppings` | Add a topping |
 | PUT | `/api/toppings/{id}` | Update a topping name |
 | DELETE | `/api/toppings/{id}` | Delete a topping |
+
+**Pizza Endpoint**
+| Method | URL | What it does |
+| --- | --- | --- |
 | GET | `/api/pizzas` | List pizzas with toppings |
 | GET | `/api/pizzas/{id}` | Get a pizza with toppings |
 | POST | `/api/pizzas` | Add a pizza |
