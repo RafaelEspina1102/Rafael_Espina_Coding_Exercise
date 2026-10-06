@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.31" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="PizzaStoreTest/**/*.cs" />
+    <Content Remove="PizzaStoreTest/**" />
+    <None Remove="PizzaStoreTest/**" />
+  </ItemGroup>
+
 </Project>

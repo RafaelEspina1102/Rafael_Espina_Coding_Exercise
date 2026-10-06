@@ -12,3 +12,6 @@ var app = builder.Build();
 app.MapControllers();
 
 app.Run();
+
+// Allows the integration tests to start this application with WebApplicationFactory.
+public partial class Program { }
